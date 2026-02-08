@@ -1,0 +1,1 @@
+cmd_Release/syncpad_native.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=13.5 -arch arm64 -L./Release -stdlib=libc++  -o Release/syncpad_native.node Release/obj.target/syncpad_native/src/addon.o 

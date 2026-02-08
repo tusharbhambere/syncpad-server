@@ -8,7 +8,7 @@ Before running the SyncPad Server, please make sure you have the following prere
 
 - Node.js: [Download and install Node.js](https://nodejs.org)
 
-Please note that the SyncPad Server relies on the `robotjs` library, which requires additional dependencies to be installed on your system. If you encounter any errors related to `robotjs`, please follow the instructions specific to your operating system in the [robotjs documentation](https://github.com/octalmage/robotjs#building).
+Please note that the SyncPad Server can use optional mouse-control libraries. It will try `robotjs` first and fall back to `@nut-tree-fork/nut-js` if available. If both fail to build on your system, the server will still start, but mouse control will be disabled. For native build requirements, see the [robotjs documentation](https://github.com/octalmage/robotjs#building) and [nut.js documentation](https://github.com/nut-tree/nut.js#installation).
 
 ## Getting Started
 
